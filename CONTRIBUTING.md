@@ -16,7 +16,7 @@ https://www.conventionalcommits.org/en/v1.0.0/
 
 - Fresh yarn install will install husky dependencies as post install
 - After installation run
-  - commitizen init cz-conventional-changelog --yarn --dev --exact
+- commitizen init cz-conventional-changelog --yarn --dev --exact
 
 #### `Contributing Flow`
 

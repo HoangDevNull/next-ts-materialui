@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import { Button } from '@material-ui/core';
 import Head from 'next/head';
 import styles from 'styles/Home.module.css';
 
@@ -7,7 +6,7 @@ const Home: FC = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>ReceitaClient</title>
+        <title>Artway</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -20,8 +19,6 @@ const Home: FC = () => {
           Get started by editing <code className={styles.code}>pages/index.js</code>
         </p>
       </main>
-
-      <Button>TEST Button</Button>
 
       <footer className={styles.footer}>
         <a
