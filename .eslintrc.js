@@ -38,31 +38,21 @@ module.exports = {
   rules: {
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
+    'import/no-mutable-exports': 'off',
     'react/jsx-filename-extension': 'off',
+    'react/prop-types': 'off',
     'import/extensions': 'off',
     'import/no-unresolved': 'error',
     'react/jsx-props-no-spreading': 'off',
-    'import/order': [
-      'error',
-      {
-        groups: ['builtin', 'external', 'internal', ['parent', 'sibling', 'object', 'index']],
-        pathGroups: [
-          {
-            pattern: 'react',
-            group: 'external',
-            position: 'before',
-          },
-        ],
-        pathGroupsExcludedImportTypes: ['react'],
-        'newlines-between': 'never',
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-        },
-      },
-    ],
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'no-unused-vars': 'off',
+    'consistent-return': 'off',
+    'import/prefer-default-export': 'off',
+    '@typescript-eslint/no-empty-interface': 'off',
     'import/no-extraneous-dependencies': [
-      'error',
+      'warn',
       { devDependencies: ['jest.setup.ts', '**/*.test.tsx', '**/*.spec.tsx', '**/*.test.ts', '**/*.spec.ts'] },
     ],
   },

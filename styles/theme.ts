@@ -1,22 +1,24 @@
-// styles/theme.ts
-
 import { createTheme } from '@material-ui/core/styles';
+import overrides from './overrides';
+import colors from './colors';
 
 // Create a theme instance.
 const theme = createTheme({
+  overrides: overrides.overrides,
+  // Material UI theme
   palette: {
+    colors,
     common: {
-      black: '#19192B',
+      black: '#09223D',
       white: '#ffffff',
     },
     primary: {
-      light: '#B3E5FC',
-      main: '#03A9F4',
-      dark: '#0288D1',
-      contrastText: '#212121',
+      light: '#09223D',
+      main: '#09223D',
+      dark: '#09223D',
     },
     secondary: {
-      main: '#008000', // omitting light and dark will calculate from main
+      main: '#09223D', // omitting light and dark will calculate from main
       contrastText: '#ffffff',
     },
     grey: {
@@ -27,17 +29,71 @@ const theme = createTheme({
       main: '#1bb2f1',
     },
     success: {
-      main: '#00d589',
+      main: '#008000',
     },
     error: {
-      main: '#832838',
+      main: '#D83333',
     },
-    background: {
-      default: '#fff',
+    text: {
+      primary: '#09223D',
+      secondary: 'rgba(255, 255, 255, 0.7)',
+      disabled: 'rgba(255, 255, 255, 0.5)',
+      hint: 'rgba(255, 255, 255, 0.5)',
+    },
+    // background: {
+    //   paper: '#fff',
+    //   default: '#fafafa',
+    // },
+    action: {
+      disabled: '#fff',
+      disabledBackground: '#566266',
+      disabledOpacity: 1,
     },
   },
   typography: {
-    fontFamily: 'Roboto',
+    htmlFontSize: 16,
+    fontSize: 16,
+    fontFamily: [
+      'SFRounded',
+      'Arial',
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+    h1: {
+      fontSize: '4rem',
+      fontWeight: 600,
+    },
+    h2: {
+      fontSize: '2.125rem',
+      fontWeight: 600,
+    },
+    h3: {
+      fontSize: '1.5rem',
+      fontWeight: 'bold',
+    },
+    h4: {
+      fontSize: '1.25rem',
+      fontWeight: 300,
+    },
+    body1: {
+      fontSize: '1rem',
+      fontWeight: 300,
+    },
+    body2: {
+      fontSize: '1rem',
+      fontWeight: 300,
+    },
+    caption: {
+      fontSize: '0.8125rem',
+      fontWeight: 300,
+    },
   },
 });
 

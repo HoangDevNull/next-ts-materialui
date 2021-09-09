@@ -1,9 +1,9 @@
-import { FC, useEffect } from 'react';
+import { FC, useEffect, ReactNode } from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
-import { AppProps } from 'next/app';
 import Head from 'next/head';
 import theme from '@styles/theme';
+import type { AppProps } from 'next/app';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
@@ -14,6 +14,9 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
     }
   }, []);
 
+  // Use the layout defined at the page level, if available
+  const getLayout = Component.getLayout || ((page: ReactNode) => page);
+
   return (
     <>
       <Head>
@@ -23,7 +26,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <Component {...pageProps} />
+        {getLayout(<Component {...pageProps} />)}
       </ThemeProvider>
     </>
   );
