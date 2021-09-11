@@ -1,25 +1,19 @@
 import { useState } from 'react';
-import { Button, Grid, Select, TextField, MenuItem, Typography, Tooltip, IconButton } from '@material-ui/core';
+import { Button, Grid, Select, TextField, MenuItem, Typography, Tooltip } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
-import Head from 'next/head';
 import Switch from 'components/Switch';
 import { ToggleButtonGroup, ToggleButton } from 'components/ToggleButton';
 import Alert from 'components/Alert';
-import Layout from 'components/Layout/Primary';
+import { MainLayout } from 'components/layouts';
+import type { PageComponent } from 'next';
 
-import type { NextPageWithLayout } from 'next';
-
-const Home: NextPageWithLayout = () => {
+export const UIPage: PageComponent = () => {
   const [age, setAge] = useState('');
   const handleChange = (event: any) => {
     setAge(event.target.value);
   };
   return (
     <div>
-      <Head>
-        <title>Artway</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Grid container spacing={3} direction="column" justifyContent="space-around" alignItems="center">
         <Typography variant="h1" component="h2" gutterBottom>
           h1. Heading
@@ -158,8 +152,6 @@ const Home: NextPageWithLayout = () => {
   );
 };
 
-export default Home;
-
-Home.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
+UIPage.getLayout = function getLayout(page) {
+  return <MainLayout>{page}</MainLayout>;
 };

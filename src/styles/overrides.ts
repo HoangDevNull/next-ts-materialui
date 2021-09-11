@@ -129,6 +129,13 @@ const overrides: ThemeOptions = {
         backgroundColor: colors.main.secondary,
       },
     },
+    // End tooltip
+    MuiContainer: {
+      root: {
+        paddingLeft: 30,
+        paddingRight: 30,
+      },
+    },
   },
 };
 

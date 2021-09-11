@@ -1,0 +1,10 @@
+{
+  "header": {
+      "platform" : "La plateforme",
+      "out_faq":"Notre FAQ"
+    },
+    "footer": {
+      "contract" : "contract",
+      "copy_right" : "2021, ARTWAY © Copyright"
+    }
+}

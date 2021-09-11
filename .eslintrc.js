@@ -39,17 +39,27 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
     'import/no-mutable-exports': 'off',
-    'react/jsx-filename-extension': 'off',
-    'react/prop-types': 'off',
     'import/extensions': 'off',
+    'no-underscore-dangle': 'off',
+    'prefer-template': 'warn',
     'import/no-unresolved': 'error',
+    'import/prefer-default-export': 'off',
+    'no-unused-vars': 'off',
+    'consistent-return': 'off',
+    'no-return-await': 'off',
+    'no-param-reassign': 'off',
+    'import/no-cycle': 'off',
+
+    // React
+    'react/prop-types': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'react/jsx-filename-extension': 'off',
+    'react/jsx-curly-brace-presence': 'off',
+
+    // Typescript
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    'no-unused-vars': 'off',
-    'consistent-return': 'off',
-    'import/prefer-default-export': 'off',
     '@typescript-eslint/no-empty-interface': 'off',
     'import/no-extraneous-dependencies': [
       'warn',

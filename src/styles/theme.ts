@@ -6,6 +6,15 @@ import colors from './colors';
 const theme = createTheme({
   overrides: overrides.overrides,
   // Material UI theme
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 577,
+      md: 960,
+      lg: 1230,
+      xl: 1920,
+    },
+  },
   palette: {
     colors,
     common: {
@@ -83,11 +92,15 @@ const theme = createTheme({
       fontWeight: 300,
     },
     body1: {
-      fontSize: '1rem',
+      fontSize: '1rem', // 16px
       fontWeight: 300,
     },
     body2: {
-      fontSize: '1rem',
+      fontSize: '1rem', // 16px
+      fontWeight: 300,
+    },
+    subtitle1: {
+      fontSize: '0.875rem', // 14px
       fontWeight: 300,
     },
     caption: {

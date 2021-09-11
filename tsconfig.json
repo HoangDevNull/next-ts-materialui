@@ -20,25 +20,20 @@
     "noUnusedParameters": true, // Report errors on unused parameters
     "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement
     "rootDir": ".",
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
       //alias pathing for absolute paths
       "@src/*": ["src/*"],
-      "@pages/*": ["pages/*"],
-      "@styles/*": ["styles/*"]
+      "@public/*": ["public/*"]
     },
     "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
     "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */
   },
   "include": [
     "next-env.d.ts",
-    "pages/**/*",
-    "src/**/*",
-    "hooks/**/*",
-    "modules/**/*",
-    "types/**/*",
-    "components/**/*",
-    "styles/**/*" // *** The files TypeScript should type check ***
+    "src/**/*.ts",
+    "src/**/*.tsx"
+    // *** The files TypeScript should type check ***
   ],
   "exclude": ["node_modules", "coverage"] // *** The files to not type check ***
 }
