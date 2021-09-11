@@ -1,7 +1,8 @@
 {
     "header": {
         "platform" : "The platform",
-        "out_faq":"Our FAQ"
+        "out_faq":"Our FAQ",
+        "virtual_shop":"Virtual shop"
       },
       "footer": {
         "contract" : "contract",

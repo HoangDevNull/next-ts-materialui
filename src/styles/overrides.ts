@@ -1,4 +1,4 @@
-import { ThemeOptions } from '@material-ui/core';
+import { ThemeOptions } from '@material-ui/core/styles';
 import colors from './colors';
 
 const overrides: ThemeOptions = {
@@ -13,7 +13,6 @@ const overrides: ThemeOptions = {
           background: '#566266',
           cursor: 'not-allowed',
           pointerEvents: 'inherit',
-          boxShadow: 'unset !important',
         },
       },
       contained: {
@@ -67,6 +66,12 @@ const overrides: ThemeOptions = {
       },
     },
     // End Button
+    MuiIconButton: {
+      root: {
+        width: 42,
+        height: 42,
+      },
+    },
     MuiLink: {
       root: {
         color: '#5265E3',
@@ -130,12 +135,6 @@ const overrides: ThemeOptions = {
       },
     },
     // End tooltip
-    MuiContainer: {
-      root: {
-        paddingLeft: 30,
-        paddingRight: 30,
-      },
-    },
   },
 };
 

@@ -49,10 +49,10 @@ const theme = createTheme({
       disabled: 'rgba(255, 255, 255, 0.5)',
       hint: 'rgba(255, 255, 255, 0.5)',
     },
-    // background: {
-    //   paper: '#fff',
-    //   default: '#fafafa',
-    // },
+    background: {
+      // paper: '#fff',
+      default: '#ffffff',
+    },
     action: {
       disabled: '#fff',
       disabledBackground: '#566266',
@@ -109,5 +109,11 @@ const theme = createTheme({
     },
   },
 });
+
+theme.props = {
+  MuiButton: {
+    disableElevation: true,
+  },
+};
 
 export default theme;

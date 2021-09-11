@@ -1,16 +1,17 @@
 import { FC } from 'react';
-import { Container, Box } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import Image from 'next/image';
-import FullWidthBackground from 'components/FullWidthBackground';
+import { MainGrid } from 'components/MainGrid';
+import { FullScreenBackground } from 'components/FullScreenBackground';
 
 const Banner: FC = () => {
   return (
-    <FullWidthBackground
+    <FullScreenBackground
       xlUrl="images/background-header-XL.png"
-      mdUrl="images/background-header-XS.png"
-      xsUrl="images/background-header-MD.png"
+      mdUrl="images/background-header-MD.png"
+      xsUrl="images/background-header-XS.png"
     >
-      <Container>
+      <MainGrid>
         <Box width={{ xs: 300, sm: 367, md: 400, lg: 433 }} m="auto">
           <Image
             src="/images/landing/artway-insigne-logo.svg"
@@ -20,8 +21,8 @@ const Banner: FC = () => {
             height={328}
           />
         </Box>
-      </Container>
-    </FullWidthBackground>
+      </MainGrid>
+    </FullScreenBackground>
   );
 };
 

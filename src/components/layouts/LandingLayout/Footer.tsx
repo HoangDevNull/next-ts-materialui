@@ -1,9 +1,10 @@
 import { FC } from 'react';
 import Image from 'next/image';
-import { Box, Container, Typography } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { useTypeSafeTranslation } from 'hooks/useTypeSafeTranslation';
-import FullWidthBackground from 'components/FullWidthBackground';
+import { FullScreenBackground } from 'components/FullScreenBackground';
+import { MainGrid } from 'components/MainGrid';
 import { LineGradient } from './LineGradient';
 
 const useStyles = makeStyles((theme) => ({
@@ -28,13 +29,13 @@ const Footer: FC = () => {
   const { t } = useTypeSafeTranslation();
   return (
     <>
-      <FullWidthBackground
+      <FullScreenBackground
         xlUrl="images/background-footer-XL.png"
         mdUrl="images/background-footer-XS.png"
         xsUrl="images/background-footer-MD.png"
       />
       <div className={classes.root}>
-        <Container>
+        <MainGrid>
           <Box pt="22px">
             <Image src="/images/logo/artway-logotype-light.svg" layout="intrinsic" height={38} width={167} />
           </Box>
@@ -53,7 +54,7 @@ const Footer: FC = () => {
           <Typography align="center" variant="subtitle1" className="white">
             {t('footer.copy_right')}
           </Typography>
-        </Container>
+        </MainGrid>
       </div>
       <LineGradient />
     </>
