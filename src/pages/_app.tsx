@@ -5,16 +5,12 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { Hydrate, QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import { Provider } from 'react-redux';
+import { appWithTranslation } from 'next-i18next';
 import Head from 'next/head';
-import type { AppProps } from 'next/app';
 import theme from 'styles/theme';
 import store from 'store';
-import { isServer } from 'lib/isServer';
-import { initI18n } from 'lib/i18n';
 
-if (!isServer) {
-  initI18n();
-}
+import type { AppProps } from 'next/app';
 
 const queryClientOption = {
   defaultOptions: {
@@ -58,4 +54,4 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default MyApp;
+export default appWithTranslation(MyApp);

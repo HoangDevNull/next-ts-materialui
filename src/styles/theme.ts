@@ -110,10 +110,4 @@ const theme = createTheme({
   },
 });
 
-theme.props = {
-  MuiButton: {
-    disableElevation: true,
-  },
-};
-
 export default theme;

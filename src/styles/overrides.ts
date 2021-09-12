@@ -13,9 +13,11 @@ const overrides: ThemeOptions = {
           background: '#566266',
           cursor: 'not-allowed',
           pointerEvents: 'inherit',
+          boxShadow: 'none !important',
         },
       },
       contained: {
+        boxShadow: 'unset',
         backgroundColor: '#ffffff',
       },
       outlined: {
