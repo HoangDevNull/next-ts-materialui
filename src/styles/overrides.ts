@@ -21,7 +21,6 @@ const overrides: ThemeOptions = {
         backgroundColor: '#ffffff',
       },
       outlined: {
-        borderWidth: '2px !important',
         borderColor: '#ffffff',
       },
       outlinedSecondary: {

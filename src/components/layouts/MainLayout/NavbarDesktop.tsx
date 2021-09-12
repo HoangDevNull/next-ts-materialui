@@ -81,6 +81,7 @@ const NavbarDesktop: FC = () => {
               </Box>
             </Link>
           </Box>
+
           <Box display="flex" alignItems="center">
             <Box mr="13px">
               <CoinButton>100</CoinButton>

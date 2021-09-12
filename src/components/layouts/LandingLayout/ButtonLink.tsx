@@ -13,7 +13,7 @@ const StyledLink = withStyles((theme) => ({
     lineHeight: `48px`,
     letterSpacing: 0,
     '&:hover': {
-      textDecoration: 'unset',
+      textDecoration: 'none',
     },
   },
 }))(MuiLink);
@@ -27,19 +27,16 @@ const useStyles = makeStyles((theme) => ({
       content: '""',
       position: 'absolute',
       backgroundColor: theme.palette.common.white,
-      width: '100%',
-      height: 1,
+      width: '0%',
+      height: 5,
       top: '100%',
       left: 0,
       pointerEvents: 'none',
-      transformOrigin: '50% 100%',
-      transition: 'clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1)',
-      clipPath: 'polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%)',
+      transition: theme.transitions.create(['width']),
     },
     '&:hover': {
       '&::before': {
-        transform: 'translate3d(0, 1px, 0) scale3d(1, 5, 1)',
-        clipPath: 'polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%)',
+        width: '100%',
       },
     },
   },

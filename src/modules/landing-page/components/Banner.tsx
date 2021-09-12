@@ -1,10 +1,31 @@
 import { FC } from 'react';
-import { Box } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import Image from 'next/image';
 import { MainGrid } from 'components/MainGrid';
 import { FullScreenBackground } from 'components/FullScreenBackground';
 
+const useStyles = makeStyles((theme) => ({
+  imageWrap: {
+    margin: 'auto',
+    width: 433,
+    [theme.breakpoints.down('md')]: {
+      width: 400,
+    },
+    [theme.breakpoints.down('sm')]: {
+      position: 'absolute',
+      top: '30%',
+      left: '50%',
+      transform: 'translate(-50%,-50%)',
+      width: 267,
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: 174,
+    },
+  },
+}));
+
 const Banner: FC = () => {
+  const clasess = useStyles();
   return (
     <FullScreenBackground
       xlUrl="images/background-header-XL.png"
@@ -12,7 +33,7 @@ const Banner: FC = () => {
       xsUrl="images/background-header-XS.png"
     >
       <MainGrid>
-        <Box width={{ xs: 300, sm: 367, md: 400, lg: 433 }} m="auto">
+        <div className={clasess.imageWrap}>
           <Image
             src="/images/landing/artway-insigne-logo.svg"
             layout="responsive"
@@ -20,7 +41,7 @@ const Banner: FC = () => {
             width={433}
             height={328}
           />
-        </Box>
+        </div>
       </MainGrid>
     </FullScreenBackground>
   );

@@ -1,8 +1,8 @@
 import { LandingPage } from 'modules/landing-page/LandingPage';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { dehydrate, QueryClient } from 'react-query';
 import { getGasPricesRequest } from 'api/block';
 import { network } from 'lib/constants';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default LandingPage;
 

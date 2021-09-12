@@ -31,8 +31,8 @@ const Footer: FC = () => {
     <>
       <FullScreenBackground
         xlUrl="images/background-footer-XL.png"
-        mdUrl="images/background-footer-XS.png"
-        xsUrl="images/background-footer-MD.png"
+        mdUrl="images/background-footer-MD.png"
+        xsUrl="images/background-footer-XS.png"
       />
       <div className={classes.root}>
         <MainGrid>

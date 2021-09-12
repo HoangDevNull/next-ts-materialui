@@ -2,7 +2,8 @@ import { useGasprice } from 'api/block';
 import { network } from 'lib/constants';
 import { LandingLayout } from 'components/layouts';
 import type { PageComponent } from 'next';
-import Banner from './Banner';
+import Banner from './components/Banner';
+import SectionA from './components/SectionA';
 
 export const LandingPage: PageComponent = () => {
   // API fetching example with react-query
@@ -11,6 +12,7 @@ export const LandingPage: PageComponent = () => {
   return (
     <>
       <Banner />
+      <SectionA />
     </>
   );
 };

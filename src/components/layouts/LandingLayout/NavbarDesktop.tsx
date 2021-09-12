@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Box from '@material-ui/core/Box';
+import { Box, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { useTypeSafeTranslation } from 'hooks/useTypeSafeTranslation';
 import { useRouter } from 'next/router';
@@ -24,16 +24,9 @@ const useStyles = makeStyles((theme) => ({
   nav: {
     position: 'relative',
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '10px 0',
-  },
-  logoWrap: {
-    cursor: 'pointer',
-    margin: '0px 88px',
-    [theme.breakpoints.down('md')]: {
-      margin: '0px 40px',
-    },
+    padding: '17px 0',
   },
 }));
 
@@ -47,21 +40,36 @@ const NavbarDeskTop: FC = () => {
       <div className={classes.root}>
         <MainGrid className={classes.container}>
           <nav className={classes.nav}>
-            <Box minWidth="81px" textAlign="center">
-              <ButtonLink href={routes.platform} active={asPath === routes.home}>
-                {t('header.platform')}
-              </ButtonLink>
-            </Box>
             <Link href={routes.landingPage} passHref>
-              <Box display="flex" alignItems="center" className={classes.logoWrap}>
-                <Image src="/images/logo/artway-logotype-light.svg" layout="intrinsic" height={38} width={167} />
+              <Box width="310px" display="flex" alignItems="center" className="cursor">
+                <Image src="/images/logo/artway-logotype-light.svg" layout="intrinsic" height={38} width={166} />
               </Box>
             </Link>
-
-            <Box minWidth="81px" textAlign="center">
+            <Box display="flex" justifyContent="space-between" width="223px">
               <ButtonLink href={routes.faq} active={asPath === routes.faq}>
                 {t('header.out_faq')}
               </ButtonLink>
+
+              <ButtonLink href={routes.platform} active={asPath === routes.home}>
+                Facebook
+              </ButtonLink>
+
+              <ButtonLink href={routes.faq} active={asPath === routes.faq}>
+                Twitter
+              </ButtonLink>
+            </Box>
+
+            <Box display="flex" alignItems="center">
+              <Box width="150px">
+                <Button fullWidth variant="contained" color="primary">
+                  {t('header.explore')}
+                </Button>
+              </Box>
+              <Box ml="10px" width="150px">
+                <Button fullWidth variant="outlined" color="default">
+                  <span className="white">{t('header.sign_in')}</span>
+                </Button>
+              </Box>
             </Box>
           </nav>
         </MainGrid>

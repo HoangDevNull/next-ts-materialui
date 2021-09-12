@@ -76,19 +76,19 @@ const theme = createTheme({
       '"Segoe UI Symbol"',
     ].join(','),
     h1: {
-      fontSize: '4rem',
+      fontSize: '4rem', // 64px
       fontWeight: 600,
     },
     h2: {
-      fontSize: '2.125rem',
+      fontSize: '2.125rem', // 34px
       fontWeight: 600,
     },
     h3: {
-      fontSize: '1.5rem',
+      fontSize: '1.5rem', // 24px
       fontWeight: 'bold',
     },
     h4: {
-      fontSize: '1.25rem',
+      fontSize: '1.25rem', // 20px
       fontWeight: 300,
     },
     body1: {

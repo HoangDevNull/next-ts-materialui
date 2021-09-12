@@ -1,10 +1,12 @@
 import { FC } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import clsx from 'clsx';
 
 interface FullScreenBackgroundProps {
   xlUrl: string;
   mdUrl?: string;
   xsUrl?: string;
+  className?: string;
 }
 
 const useStyles = makeStyles((theme) => ({
@@ -34,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const FullScreenBackground: FC<FullScreenBackgroundProps> = ({ children, ...props }) => {
+export const FullScreenBackground: FC<FullScreenBackgroundProps> = ({ children, className, ...props }) => {
   const classes = useStyles(props);
-  return <div className={classes.root}>{children}</div>;
+  return <div className={clsx(classes.root, className)}>{children}</div>;
 };

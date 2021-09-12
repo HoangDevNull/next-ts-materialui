@@ -2,10 +2,28 @@
   "header": {
       "platform" : "La plateforme",
       "out_faq":"Notre FAQ",
-      "virtual_shop":"Boutique virtuelle"
-    },
-    "footer": {
+      "virtual_shop":"Boutique virtuelle",
+      "explore" : "Explorer",
+      "sign_in" : "Se connecter"
+   },
+  "footer": {
       "contract" : "contract",
       "copy_right" : "2021, ARTWAY © Copyright"
+   },
+  "landingPage" : {
+    "section_1":{
+      "title_1": "Plongez dans un nouveau monde de créations",
+      "title_2": "Plongez dans un nouveau monde de créations",
+      "title_3": "Plongez dans un nouveau monde de créations",
+      "title_4": "Plongez dans un nouveau monde de créations",
+      "title_5": "Plongez dans un nouveau monde de créations",
+      "title_6": "Plongez dans un nouveau monde de créations",
+      "description_1": "En quelques clics, créez votre vitrine, mettez en lumière vos œuvres et faîtes-vous connaitre !",
+      "description_2": "Créations finalisées ou simples ébauches, tout l’art numérique a sa place sur Artway.",
+      "description_3": "Sur Artway vos oeuvres sont protégées ! Notre Blockchain garantit l’antériorité de vos créations.",
+      "description_4": "Rendez vos œuvres uniques grâce à un service de création de NFT, simple, rapide et accessible !",
+      "description_5": "Un système de paiement sécurisé qui vous offre  une solution efficace pour monétiser votre art.",
+      "description_6": "Créez enfin une relation directe et significative avec votre public grâce à nos messageries instantanées."
     }
+  }
 }
