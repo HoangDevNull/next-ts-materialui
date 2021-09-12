@@ -25,6 +25,7 @@ interface IconButtonProps {
   contained?: boolean;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   svgClassName?: string;
+  darkTheme?: boolean;
 }
 
 export const IconButton: FC<IconButtonProps> = ({
@@ -32,15 +33,23 @@ export const IconButton: FC<IconButtonProps> = ({
   onClick,
   htmlColor,
   fontSize = 'inherit',
+  darkTheme,
   contained,
   icon,
 }) => {
   const classes = useStyles();
 
   const color = useMemo(() => {
+    let light = '#ffffff';
+    let dark = '#09223D';
+    if (darkTheme) {
+      dark = '#ffffff';
+      light = '#09223D';
+    }
+
     if (htmlColor) return htmlColor;
-    return contained ? '#ffffff' : '#09223D';
-  }, [htmlColor, contained]);
+    return contained ? light : dark;
+  }, [htmlColor, contained, darkTheme]);
 
   return (
     <MuiIconButton
@@ -63,5 +72,3 @@ export const IconButton: FC<IconButtonProps> = ({
     </MuiIconButton>
   );
 };
-
-export default IconButton;

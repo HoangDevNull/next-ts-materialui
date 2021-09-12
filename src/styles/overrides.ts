@@ -51,7 +51,7 @@ const overrides: ThemeOptions = {
         letterSpacing: 0,
       },
       iconSizeSmall: {
-        marginRight: 0,
+        // marginRight: 0,
       },
       containedSizeLarge: {
         fontSize: '0.875rem',
@@ -135,6 +135,12 @@ const overrides: ThemeOptions = {
       },
     },
     // End tooltip
+    MuiDivider: {
+      root: {
+        opacity: 0.5,
+        backgroundColor: '#E6E8F0',
+      },
+    },
   },
 };
 

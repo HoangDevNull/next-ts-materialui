@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import clsx from 'clsx';
-import { Box, AppBar, Toolbar, SvgIcon } from '@material-ui/core';
+import { Box, AppBar, Toolbar } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { useTypeSafeTranslation } from 'hooks/useTypeSafeTranslation';
 import Image from 'next/image';
@@ -9,8 +9,8 @@ import { routes } from 'types/route';
 import { useToggle } from 'hooks/useToggle';
 import { IconButton } from 'components/IconButton';
 
-import { MenuIcon } from 'asset/icons/MenuIcon';
-import { CrossIcon } from 'asset/icons/CrossIcon';
+import { MenuIcon } from 'icons/MenuIcon';
+import { CrossIcon } from 'icons/CrossIcon';
 import { LineGradient } from './LineGradient';
 import MobileDrawer from './MobileDrawer';
 import { Hide } from '../Hide';
