@@ -55,6 +55,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-filename-extension': 'off',
     'react/jsx-curly-brace-presence': 'off',
+    'no-use-before-define': 'off',
 
     // Typescript
     '@typescript-eslint/no-explicit-any': 'off',

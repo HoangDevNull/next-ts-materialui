@@ -20,13 +20,21 @@ const useStyles = makeStyles((theme) => ({
 
 interface IconButtonProps {
   htmlColor?: string;
-  fontSize?: 'small' | 'inherit';
+  fontSize?: 'default' | 'inherit' | 'large' | 'medium' | 'small';
   icon: any;
   contained?: boolean;
   onClick?: MouseEventHandler<HTMLButtonElement>;
+  svgClassName?: string;
 }
 
-export const IconButton: FC<IconButtonProps> = ({ onClick, htmlColor, fontSize = 'inherit', contained, icon }) => {
+export const IconButton: FC<IconButtonProps> = ({
+  svgClassName,
+  onClick,
+  htmlColor,
+  fontSize = 'inherit',
+  contained,
+  icon,
+}) => {
   const classes = useStyles();
 
   const color = useMemo(() => {
@@ -43,6 +51,7 @@ export const IconButton: FC<IconButtonProps> = ({ onClick, htmlColor, fontSize =
       }}
     >
       <SvgIcon
+        className={svgClassName}
         classes={{
           fontSizeSmall: classes.iconSizeSmall,
           fontSizeInherit: classes.iconSizeInherit,

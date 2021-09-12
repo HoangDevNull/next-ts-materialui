@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import clsx from 'clsx';
-import { Box, AppBar, Toolbar, IconButton as MuiIconButton } from '@material-ui/core';
+import { Box, AppBar, Toolbar, SvgIcon } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { useTypeSafeTranslation } from 'hooks/useTypeSafeTranslation';
 import Image from 'next/image';
@@ -8,10 +8,11 @@ import Link from 'next/link';
 import { routes } from 'types/route';
 import { useToggle } from 'hooks/useToggle';
 import { IconButton } from 'components/IconButton';
+
+import { MenuIcon } from 'asset/icons/MenuIcon';
+import { CrossIcon } from 'asset/icons/CrossIcon';
 import { LineGradient } from './LineGradient';
 import MobileDrawer from './MobileDrawer';
-
-import MenuIcon from '../../../../public/images/icons/menu.svg';
 import { Hide } from '../Hide';
 
 const useStyles = makeStyles((theme) => ({
@@ -28,6 +29,9 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: 20,
     paddingRight: 20,
     minHeight: 68,
+  },
+  closeIcon: {
+    width: 33,
   },
 }));
 
@@ -59,9 +63,7 @@ const NavbarMobile: FC = () => {
           </Link>
 
           <Hide if={!open}>
-            <MuiIconButton onClick={toggleOpen}>
-              <Image src="/images/icons/cross.svg" layout="fixed" width={18.85} height={16.14} />
-            </MuiIconButton>
+            <IconButton svgClassName={classes.closeIcon} onClick={toggleOpen} htmlColor="#09223D" icon={CrossIcon} />
           </Hide>
           <Hide if={open}>
             <IconButton onClick={toggleOpen} htmlColor="#ffffff" icon={MenuIcon} />

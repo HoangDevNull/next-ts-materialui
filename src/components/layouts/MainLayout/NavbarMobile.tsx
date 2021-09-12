@@ -9,7 +9,8 @@ import { routes } from 'types/route';
 import { useToggle } from 'hooks/useToggle';
 import { IconButton } from 'components/IconButton';
 
-import MenuIcon from '../../../../public/images/icons/menu.svg';
+import { MenuIcon } from 'asset/icons/MenuIcon';
+import { CrossIcon } from 'asset/icons/CrossIcon';
 import { Hide } from '../Hide';
 
 const useStyles = makeStyles((theme) => ({
@@ -56,7 +57,7 @@ const NavbarMobile: FC = () => {
 
         <Hide if={!open}>
           <MuiIconButton onClick={toggleOpen}>
-            <Image src="/images/icons/cross.svg" layout="fixed" width={18.85} height={16.14} />
+            <IconButton onClick={toggleOpen} htmlColor="#ffffff" icon={CrossIcon} />
           </MuiIconButton>
         </Hide>
         <Hide if={open}>

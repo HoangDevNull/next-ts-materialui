@@ -8,12 +8,11 @@ import Image from 'next/image';
 import { MainGrid } from 'components/MainGrid';
 import { IconButton } from 'components/IconButton';
 import Link from 'next/link';
-
-import HomeIcon from '../../../../public/images/icons/home.svg';
-import LibraryIcon from '../../../../public/images/icons/library.svg';
-import ActivityIcon from '../../../../public/images/icons/activity.svg';
-import DiscussIcon from '../../../../public/images/icons/discuss.svg';
-import ProfileIcon from '../../../../public/images/icons/profile.svg';
+import { HomeIcon } from 'asset/icons/HomeIcon';
+import { LibraryIcon } from 'asset/icons/LibraryIcon';
+import { ActivityIcon } from 'asset/icons/ActivityIcon';
+import { ProfileIcon } from 'asset/icons/ProfileIcon';
+import { DiscussIcon } from 'asset/icons/DiscussIcon';
 
 const useStyles = makeStyles((theme) => ({
   root: {
