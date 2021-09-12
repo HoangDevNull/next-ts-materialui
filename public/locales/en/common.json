@@ -1,29 +1,52 @@
 {
-    "header": {
-        "platform" : "The platform",
-        "out_faq":"Our FAQ",
-        "virtual_shop":"Virtual shop",
-        "explore" : "Explorer",
-        "sign_in" : "Sign in"
-      },
-    "footer": {
-        "contract" : "contract",
-        "copy_right" : "2021, ARTWAY © Copyright"
-      },
-    "landingPage" : {
-        "section_1":{
-          "title_1": "Immerse yourself in a new world of creations",
-          "title_2": "Immerse yourself in a new world of creations",
-          "title_3": "Immerse yourself in a new world of creations",
-          "title_4": "Immerse yourself in a new world of creations",
-          "title_5": "Immerse yourself in a new world of creations",
-          "title_6": "Immerse yourself in a new world of creations",
-          "description_1": "En quelques clics, créez votre vitrine, mettez en lumière vos œuvres et faîtes-vous connaitre !",
-          "description_2": "Créations finalisées ou simples ébauches, tout l’art numérique a sa place sur Artway.",
-          "description_3": "Sur Artway vos oeuvres sont protégées ! Notre Blockchain garantit l’antériorité de vos créations.",
-          "description_4": "Rendez vos œuvres uniques grâce à un service de création de NFT, simple, rapide et accessible !",
-          "description_5": "Un système de paiement sécurisé qui vous offre  une solution efficace pour monétiser votre art.",
-          "description_6": "Créez enfin une relation directe et significative avec votre public grâce à nos messageries instantanées."
-        }
+  "header": {
+      "platform" : "The platform",
+      "out_faq":"Our FAQ",
+      "virtual_shop":"Virtual shop",
+      "explore" : "Explore",
+      "sign_in" : "Sign in"
+    },
+  "footer": {
+      "contract" : "contract",
+      "copy_right" : "2021, ARTWAY © Copyright"
+    },
+  "landingPage" : {
+    "section_1":{
+      "title_1": "Immerse yourself in a new world of creations",
+      "title_2": "Immerse yourself in a new world of creations",
+      "title_3": "Immerse yourself in a new world of creations",
+      "title_4": "Immerse yourself in a new world of creations",
+      "title_5": "Immerse yourself in a new world of creations",
+      "title_6": "Immerse yourself in a new world of creations",
+      "description_1": "En quelques clics, créez votre vitrine, mettez en lumière vos œuvres et faîtes-vous connaitre !",
+      "description_2": "Créations finalisées ou simples ébauches, tout l’art numérique a sa place sur Artway.",
+      "description_3": "Sur Artway vos oeuvres sont protégées ! Notre Blockchain garantit l’antériorité de vos créations.",
+      "description_4": "Rendez vos œuvres uniques grâce à un service de création de NFT, simple, rapide et accessible !",
+      "description_5": "Un système de paiement sécurisé qui vous offre  une solution efficace pour monétiser votre art.",
+      "description_6": "Créez enfin une relation directe et significative avec votre public grâce à nos messageries instantanées."
       }
+    },
+  "faq" :{
+      "headline" : "A qui s’adresse Artway ?", 
+      "title_1": "Comment suivre le développement d’Artway ?",
+      "title_2": "C’est quoi un NFT ?",
+      "title_3": "En quoi Artway révolutionne la création de NFT ?",
+      "title_4": "Comment mon œuvre va-t-elle être protégée ?",
+      "title_5": "Comment créer une vitrine ?",
+      "title_6": "Est-ce qu’un visiteur peut déposer du contenu ?",
+      "title_7": "Quels types de contenus peuvent être exposés ?",
+      "title_8": "Je n’en suis qu’au stade d’ébauche, est ce que je peux la diffuser sur Artway ?",
+      "title_9": "Comment acheter une œuvre ?",
+      "title_10": "Que se passe-t-il si un artiste retire son œuvre ou supprime sa vitrine alors que j’ai acheté sa création ?",
+      "description_1": "Artway s’adresse à tous les artistes désirant mettre en lumière leur créativité et monétiser leur art. Mais également à tous les curieux et passionnés qui souhaitent découvrir des artistes aux horizons variés et toutes sortes de créations.",
+      "description_2": "Rendez-vous sur la page principale et renseignez votre adresse mail. Vous serez informé(e) de l’avancée du développement et pourrez faire partie des premiers à tester Artway avant sa sortie officielle.",
+      "description_3": "NFT signifie « Non-Fungible Token » ou « jeton non fongible » en français.\nLe NFT est une réelle opportunité pour le domaine de l’art numérique car il permet de lutter contre les copies, en offrant un certificat d’authenticité numérique infalsifiable. Les artistes peuvent ainsi rendre leur œuvre numérique unique ou créer des éditions limitées. Les acheteurs possèdent alors un NFT à caractère unique qui les rend propriétaires légitimes de l’œuvre.",
+      "description_4": "En déposant votre œuvre vous pouvez choisir d’en faire un NFT. C’est-à-dire une version unique ou en édition limitée de votre création numérique. Tout est géré et intégré au sein du site grâce notre Blockchain. Artway libère ainsi les artistes de la nécessité de posséder des cryptomonnaies exposées à la volatilité. Le service proposé par Artway est accessible pour que la vente soit rentable même à petit prix. Le prix du NFT reste fixe.",
+      "description_5": "Dès que vous déposez une œuvre sur Artway, une vitrine est automatiquement créée. Elle regroupe les informations que vous souhaitez partager sur vous et votre univers artistique ainsi qu’une galerie où sont exposées vos créations. Vous pourrez ensuite la personnaliser pour vous démarquer encore davantage et bien sûr la partager pour obtenir toujours plus de visibilité.",
+      "description_6": "Absolument ! Si vous aussi vous souhaitez partager vos propres créations, il vous suffit de vous rendre dans votre profil et ajouter du contenu. Suivez les étapes pour décrire votre œuvre, rejoignez la communauté d’artistes et vendez-la facilement.",
+      "description_7": "Tous les arts numériques sont les bienvenus sur Artway. Dessin, peinture, animation, texte, bande dessinée, son, vidéo, photo, tout ce que vous créez mérite d’être mis en lumière et de rencontrer son public.",
+      "description_8": "Bien sûr ! Vous pouvez exposer votre ébauche et la mettre à jour jusqu’à sa finalisation. Les artistes peuvent ainsi tester l’accueil de leur public, recevoir de précieux retours ou collaborer dans le processus de création ! Quand vous êtes satisfait(e) de votre œuvre, définissez un prix et vendez-la immédiatement.",
+      "description_9": "Vous pouvez acheter n’importe quelle œuvre exposée grâce à notre système de paiement sécurisé. Vous sélectionnez l’œuvre qui vous plait, cliquez sur « acheter » et une fois le paiement effectué elle est visible dans votre bibliothèque.\nS’il s’agit d’un NFT unique, vous serez alors le seul à posséder l’œuvre, et s’il s’agit d’une édition limitée, vous recevrez le numéro de série correspondant.",
+      "description_10": "Quand vous achetez une œuvre sur Artway, elle rejoint votre bibliothèque et restera accessible même si elle n’est plus en vente. S’il s’agit d’une ébauche, vous conservez la dernière version avant sa suppression par l’artiste."
+    }
 }

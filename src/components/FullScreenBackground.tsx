@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
+import { backgroundImage } from 'styles/sharedStyle';
 
 interface FullScreenBackgroundProps {
   xlUrl: string;
@@ -11,20 +12,15 @@ interface FullScreenBackgroundProps {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    position: 'relative',
+    textAlign: 'center',
     height: '100vh',
     minHeight: 757,
-    backgroundSize: 'cover',
-    backgroundPosition: 'bottom center',
-    backgroundRepeat: 'no-repeat',
-    alignItems: 'center',
-    display: 'flex',
-    textAlign: 'center',
     marginTop: -2,
     marginBottom: -2,
     marginLeft: -2,
     marginRight: -2,
     backgroundImage: (props: FullScreenBackgroundProps) => `url(${props.xlUrl})`,
+    ...backgroundImage,
     [theme.breakpoints.down('md')]: {
       backgroundImage: (props: FullScreenBackgroundProps) => `url(${props.mdUrl})`,
       minHeight: 711,

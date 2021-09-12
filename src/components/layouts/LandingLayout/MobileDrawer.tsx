@@ -45,14 +45,18 @@ const MobileDrawer: FC<{ open: boolean; toggleOpen: () => void }> = ({ open, tog
       }}
     >
       <Link href={routes.faq}>
-        <Typography component="a" color="secondary">
+        <Typography onClick={toggleOpen} component="a" color="secondary">
           {t('header.out_faq')}
         </Typography>
       </Link>
       <Box component="a" my="61px">
-        <Typography color="secondary">Facebook</Typography>
+        <Typography onClick={toggleOpen} color="secondary">
+          Facebook
+        </Typography>
       </Box>
-      <Typography color="secondary">Twitter</Typography>
+      <Typography onClick={toggleOpen} color="secondary">
+        Twitter
+      </Typography>
 
       <Box mt="auto" mb="31px">
         <Typography variant="body1" className="semibold">

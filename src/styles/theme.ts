@@ -78,26 +78,32 @@ const theme = createTheme({
     h1: {
       fontSize: '4rem', // 64px
       fontWeight: 600,
+      lineHeight: '72px',
     },
     h2: {
       fontSize: '2.125rem', // 34px
       fontWeight: 600,
+      lineHeight: '42px',
     },
     h3: {
       fontSize: '1.5rem', // 24px
       fontWeight: 'bold',
+      lineHeight: '32px',
     },
     h4: {
       fontSize: '1.25rem', // 20px
       fontWeight: 300,
+      lineHeight: '28px',
     },
     body1: {
       fontSize: '1rem', // 16px
       fontWeight: 300,
+      lineHeight: '24px',
     },
     body2: {
       fontSize: '1rem', // 16px
       fontWeight: 300,
+      lineHeight: '24px',
     },
     subtitle1: {
       fontSize: '0.875rem', // 14px
@@ -105,7 +111,8 @@ const theme = createTheme({
     },
     caption: {
       fontSize: '0.8125rem',
-      fontWeight: 300,
+      fontWeight: 300, // 13px
+      lineHeight: '18px',
     },
   },
 });

@@ -20,13 +20,9 @@ const useStyles = makeStyles((theme) => ({
       background: 'rgba(0,0,0,0.1)',
     },
   },
-  title: {
-    lineHeight: '72px',
-  },
   description: {
     marginTop: 60,
     maxWidth: 689,
-    lineHeight: '28px',
     [theme.breakpoints.down('sm')]: {
       maxWidth: 'none',
       color: '#fff',
@@ -107,9 +103,7 @@ const Carousel: FC = () => {
             {Math.abs(activeStep - index) <= 2 ? (
               <div>
                 <Hidden smDown>
-                  <Typography variant="h1" className={classes.title}>
-                    {step.title}
-                  </Typography>
+                  <Typography variant="h1">{step.title}</Typography>
                 </Hidden>
 
                 <Typography variant="h4" className={classes.description}>

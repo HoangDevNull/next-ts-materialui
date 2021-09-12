@@ -3,7 +3,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 export const useScreenType = () => {
   const isLarge = useMediaQuery('(min-width:1230px)');
   const isMedium = useMediaQuery('(min-width:960px)');
-  const isSmall = useMediaQuery('(min-width:577px)');
+  const isSmall = useMediaQuery('(max-width:960px)');
 
   if (isLarge) return 'lg';
 

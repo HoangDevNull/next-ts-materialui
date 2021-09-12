@@ -2,7 +2,7 @@
 export enum routes {
   landingPage = '/',
   platform = '/platform',
-  faq = '/out-faq',
+  faq = '/faq',
   home = '/home',
   myActivity = '/my-activity',
   myLibrary = '/my-library',

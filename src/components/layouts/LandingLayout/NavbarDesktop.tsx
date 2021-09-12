@@ -50,13 +50,9 @@ const NavbarDeskTop: FC = () => {
                 {t('header.out_faq')}
               </ButtonLink>
 
-              <ButtonLink href={routes.platform} active={asPath === routes.home}>
-                Facebook
-              </ButtonLink>
+              <ButtonLink href={routes.platform}>Facebook</ButtonLink>
 
-              <ButtonLink href={routes.faq} active={asPath === routes.faq}>
-                Twitter
-              </ButtonLink>
+              <ButtonLink href={routes.home}>Twitter</ButtonLink>
             </Box>
 
             <Box display="flex" alignItems="center">

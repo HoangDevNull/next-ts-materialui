@@ -1,5 +1,6 @@
-import { Hidden } from '@material-ui/core';
 import { FC } from 'react';
+import { Hidden } from '@material-ui/core';
+import SignInModal from 'modules/auth/SignInModal';
 import Footer from './Footer';
 import NavbarDesktop from './NavbarDesktop';
 import NavbarMobile from './NavbarMobile';
@@ -13,8 +14,9 @@ const LandingLayout: FC = ({ children }) => {
       <Hidden smDown>
         <NavbarDesktop />
       </Hidden>
-      <main className="h-screen">{children}</main>
+      <main>{children}</main>
       <Footer />
+      <SignInModal />
     </>
   );
 };

@@ -20,12 +20,10 @@ const useStyles = makeStyles((theme) => ({
     background: 'linear-gradient(0deg, #FEFEFE 0%, rgba(240,138,68,0.07) 100%, rgba(239,129,53,0) 100%);',
   },
   contentWrap: {
+    paddingTop: 40,
     maxWidth: 776,
   },
   buttonWrap: {
-    display: 'flex',
-    mt: '80px',
-    pb: '181px',
     '& button': {
       width: 280,
     },

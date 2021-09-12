@@ -42,8 +42,7 @@ const useStyles = makeStyles((theme) => ({
   },
   active: {
     '&::before': {
-      transform: 'translate3d(0, 1px, 0) scale3d(1, 5, 1)',
-      clipPath: 'polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%)',
+      width: '100%',
     },
   },
 }));
